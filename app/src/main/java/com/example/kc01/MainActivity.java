@@ -17,9 +17,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
-///fdsfsdfdsfdsfבגכדגכגדכגכדkk
     private AppBarConfiguration mAppBarConfiguration;
-
+//pull  1
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
