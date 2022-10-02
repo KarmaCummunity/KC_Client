@@ -4,25 +4,34 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/home"
-            android:title="@string/menu_main" />
-        <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/money"
             android:icon="@drawable/money"
             android:title="@string/menu_money" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/time"
             android:icon="@drawable/hourglass"
             android:title="@string/menu_time" />
         <item
-            android:id="@+id/nav_knowledge"
-            android:icon="@drawable/money"
-            android:title="@string/menu_money" />
+            android:id="@+id/knowledge"
+            android:icon="@mipmap/books_foreground"
+            android:title="@string/menu_knowledge" />
         <item
-            android:id="@+id/nav_food"
+            android:id="@+id/food"
+            android:icon="@mipmap/food_foreground"
+            android:title="@string/menu_food" />
+        <item
+            android:id="@+id/stuff"
             android:icon="@drawable/hourglass"
-            android:title="@string/menu_time" />
+            android:title="@string/menu_stuff" />
+        <item
+            android:id="@+id/medicine"
+            android:icon="@drawable/hourglass"
+            android:title="@string/menu_medicine" />
+        <item
+            android:id="@+id/trash"
+            android:icon="@drawable/hourglass"
+            android:title="@string/menu_trash" />
     </group>
 </menu>
