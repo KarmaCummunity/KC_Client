@@ -1,16 +1,16 @@
-package com.example.KC.ui.money;
+package com.example.KC.ui.time;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class MoneyViewModel extends ViewModel {
+public class TimeViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public MoneyViewModel() {
+    public TimeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("https://www.jgive.com/");
+        mText.setValue("https://www.hebrew.we-tribu.com/");
     }
 
     public LiveData<String> getText() {

@@ -47,7 +47,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         sentences_View.setOnClickListener(this);
         return root;
     }
-
+    
     public void onClick(View arg0) {
         try {
 

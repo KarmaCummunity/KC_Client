@@ -18,7 +18,12 @@
     <string name="menu_traffic">תחבורה</string>
     <string name="menu_medicine">רפואה</string>
     <string name="menu_trash">פסולת</string>
-
+    <string name="title_activity_money">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_time">MainActivity</string>
+    <string name="title_activity_tribute__time">MainActivity</string>
 
 
 </resources>

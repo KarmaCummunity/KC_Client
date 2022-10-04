@@ -1,4 +1,4 @@
-package com.example.KC.ui.utils;
+package com.example.KC.utils;
 
 public class Pair {
     public String x;

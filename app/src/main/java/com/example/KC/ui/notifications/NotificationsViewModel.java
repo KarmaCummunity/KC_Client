@@ -1,16 +1,16 @@
-package com.example.KC.ui.money;
+package com.example.KC.ui.notifications;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class MoneyViewModel extends ViewModel {
+public class NotificationsViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public MoneyViewModel() {
+    public NotificationsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("https://www.jgive.com/");
+        mText.setValue("This is notifications fragment");
     }
 
     public LiveData<String> getText() {

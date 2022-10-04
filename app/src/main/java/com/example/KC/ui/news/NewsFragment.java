@@ -1,4 +1,4 @@
-package com.example.KC.ui.time;
+package com.example.KC.ui.news;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.KC.R;
 
-public class SlideshowFragment extends Fragment {
+public class NewsFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
+    private NewsViewModel newsViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_time, container, false);
-        final TextView textView = root.findViewById(R.id.text_slideshow);
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        newsViewModel =
+                new ViewModelProvider(this).get(NewsViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_news, container, false);
+        final TextView textView = root.findViewById(R.id.news);
+        newsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
