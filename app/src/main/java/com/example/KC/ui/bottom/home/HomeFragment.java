@@ -32,7 +32,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
+        View root = inflater.inflate(R.layout.home_fragment, container, false);
 
         fill();
         sentences_View = root.findViewById(R.id.sentences_View);
@@ -47,7 +47,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         sentences_View.setOnClickListener(this);
         return root;
     }
-    
+
+
+
     public void onClick(View arg0) {
         try {
 

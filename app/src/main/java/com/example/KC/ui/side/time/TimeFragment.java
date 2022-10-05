@@ -22,14 +22,17 @@ public class TimeFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         timeViewModel =
                 new ViewModelProvider(this).get(TimeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_money, container, false);
-        final TextView textView = root.findViewById(R.id.link_money);
+        View root = inflater.inflate(R.layout.fragment_time, container, false);
+        final TextView textView = root.findViewById(R.id.link_time);
         timeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
         });
+        //Uri uri = Uri.parse("https://www.hebrew.we-tribu.com"); // missing 'http://' will cause crashed
+        //Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        //startActivity(intent);
         return root;
     }
 }

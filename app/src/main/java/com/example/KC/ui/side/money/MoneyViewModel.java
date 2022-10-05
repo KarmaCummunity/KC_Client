@@ -10,7 +10,7 @@ public class MoneyViewModel extends ViewModel {
 
     public MoneyViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("https://www.jgive.com/");
+        mText.setValue("כאן תורמים כסף");
     }
 
     public LiveData<String> getText() {

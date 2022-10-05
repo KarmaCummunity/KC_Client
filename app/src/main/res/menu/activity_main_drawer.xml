@@ -47,21 +47,27 @@
             android:id="@+id/medicine"
             android:icon="@drawable/hourglass"
             android:title="@string/menu_medicine" />
-        <item
-            android:id="@+id/hobbies"
-            android:icon="@drawable/hourglass"
-            android:title="@string/menu_hobbies" />
-        <item
-            android:id="@+id/music"
-            android:icon="@drawable/hourglass"
-            android:title="@string/menu_music"/>
-        <item
-            android:id="@+id/games"
-            android:icon="@drawable/hourglass"
-            android:title="@string/menu_games"/>
-        <item
-            android:id="@+id/trash"
-            android:icon="@drawable/hourglass"
-            android:title="@string/menu_trash" />
+        <item android:title="">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/hobbies"
+                        android:icon="@drawable/hourglass"
+                        android:title="@string/menu_hobbies" />
+                    <item
+                        android:id="@+id/music"
+                        android:icon="@drawable/hourglass"
+                        android:title="@string/menu_music"/>
+                    <item
+                        android:id="@+id/games"
+                        android:icon="@drawable/hourglass"
+                        android:title="@string/menu_games"/>
+                    <item
+                        android:id="@+id/trash"
+                        android:icon="@drawable/hourglass"
+                        android:title="@string/menu_trash" />
+                </group>
+            </menu>
+        </item>
     </group>
 </menu>

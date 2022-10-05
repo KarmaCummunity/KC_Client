@@ -10,7 +10,7 @@ public class TimeViewModel extends ViewModel {
 
     public TimeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("https://www.hebrew.we-tribu.com/");
+        mText.setValue("כאן תורמים זמן - מתנדבים");
     }
 
     public LiveData<String> getText() {
