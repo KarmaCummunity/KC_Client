@@ -1,16 +1,16 @@
-package com.example.KC.ui.money;
+package com.example.KC.ui.bottom.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class MoneyViewModel extends ViewModel {
+public class HomeViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public MoneyViewModel() {
+    public HomeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("https://www.jgive.com/");
+        mText.setValue("This is home fragment");
     }
 
     public LiveData<String> getText() {

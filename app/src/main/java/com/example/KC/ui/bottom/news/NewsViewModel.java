@@ -1,4 +1,4 @@
-package com.example.KC.ui.news;
+package com.example.KC.ui.bottom.news;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

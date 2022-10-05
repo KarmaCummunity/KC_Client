@@ -1,16 +1,16 @@
-package com.example.KC.ui.notifications;
+package com.example.KC.ui.side.time;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class NotificationsViewModel extends ViewModel {
+public class TimeViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public NotificationsViewModel() {
+    public TimeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is notifications fragment");
+        mText.setValue("https://www.hebrew.we-tribu.com/");
     }
 
     public LiveData<String> getText() {

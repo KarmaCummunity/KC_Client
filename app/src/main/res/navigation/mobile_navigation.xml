@@ -7,20 +7,26 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.KC.ui.home.HomeFragment"
+        android:name="com.example.KC.ui.bottom.home.HomeFragment"
         android:label="            KC"
         android:gravity="center"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_news"
-        android:name="com.example.KC.ui.money.NewsFragment"
-        android:label="@string/menu_money"
-        tools:layout="@layout/fragment_money" />
+        android:name="com.example.KC.ui.bottom.news.NewsFragment"
+        android:label="@string/menu_new"
+        tools:layout="@layout/fragment_news" />
 
     <fragment
-        android:id="@+id/nav_time"
-        android:name="com.example.KC.ui.time.TimeFragment"
-        android:label="@string/menu_time"
-        tools:layout="@layout/fragment_time" />
+        android:id="@+id/nav_searach"
+        android:name="com.example.KC.ui.bottom.search.SearchFragment"
+        android:label="@string/menu_search"
+        tools:layout="@layout/search_fragment" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.KC.ui.bottom.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/profile_fragment" />
 </navigation>

@@ -16,8 +16,17 @@
     <string name="menu_stuff">חפצים</string>
     <string name="menu_knowledge">ידע</string>
     <string name="menu_traffic">תחבורה</string>
+    <string name="menu_family">משפחה</string>
+    <string name="menu_housing">דיור</string>
+    <string name="menu_area">שטח</string>
+    <string name="menu_hobbies">תחביבים</string>
     <string name="menu_medicine">רפואה</string>
     <string name="menu_trash">פסולת</string>
+    <string name="menu_music">מוזיקה</string>
+    <string name="menu_games">מחשקים</string>
+    <string name="menu_new">חדשות הקהילה</string>
+    <string name="menu_search">חיפוש</string>
+    <string name="menu_profile">חלקך בקהילה</string>
     <string name="title_activity_money">MainActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>

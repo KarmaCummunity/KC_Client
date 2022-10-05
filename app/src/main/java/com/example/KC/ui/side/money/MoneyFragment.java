@@ -1,4 +1,4 @@
-package com.example.KC.ui.news;
+package com.example.KC.ui.side.money;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.KC.R;
 
-public class NewsFragment extends Fragment {
+public class MoneyFragment extends Fragment {
 
-    private NewsViewModel newsViewModel;
+    private MoneyViewModel moneyViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        newsViewModel =
-                new ViewModelProvider(this).get(NewsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_news, container, false);
-        final TextView textView = root.findViewById(R.id.news);
-        newsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        moneyViewModel =
+                new ViewModelProvider(this).get(MoneyViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_money, container, false);
+        final TextView textView = root.findViewById(R.id.link_money);
+        moneyViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

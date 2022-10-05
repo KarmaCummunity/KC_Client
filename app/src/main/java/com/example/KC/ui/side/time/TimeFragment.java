@@ -1,4 +1,4 @@
-package com.example.KC.ui.time;
+package com.example.KC.ui.side.time;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

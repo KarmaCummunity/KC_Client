@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
+    tools:showIn="navigation_view"
+        android:id="@+id/group">
+
 
     <group android:checkableBehavior="single">
 
@@ -14,21 +16,49 @@
             android:icon="@drawable/hourglass"
             android:title="@string/menu_time" />
         <item
-            android:id="@+id/knowledge"
-            android:icon="@mipmap/books_foreground"
-            android:title="@string/menu_knowledge" />
-        <item
             android:id="@+id/food"
             android:icon="@mipmap/food_foreground"
             android:title="@string/menu_food" />
+        <item
+            android:id="@+id/clothes"
+            android:icon="@drawable/hourglass"
+            android:title="@string/menu_clothes" />
         <item
             android:id="@+id/stuff"
             android:icon="@drawable/hourglass"
             android:title="@string/menu_stuff" />
         <item
+            android:id="@+id/housting"
+            android:icon="@mipmap/books_foreground"
+            android:title="@string/menu_housing" />
+        <item
+            android:id="@+id/knowledge"
+            android:icon="@mipmap/books_foreground"
+            android:title="@string/menu_knowledge" />
+        <item
+            android:id="@+id/family"
+            android:icon="@drawable/hourglass"
+            android:title="@string/menu_family"/>
+        <item
+            android:id="@+id/area"
+            android:icon="@drawable/hourglass"
+            android:title="@string/menu_area" />
+        <item
             android:id="@+id/medicine"
             android:icon="@drawable/hourglass"
             android:title="@string/menu_medicine" />
+        <item
+            android:id="@+id/hobbies"
+            android:icon="@drawable/hourglass"
+            android:title="@string/menu_hobbies" />
+        <item
+            android:id="@+id/music"
+            android:icon="@drawable/hourglass"
+            android:title="@string/menu_music"/>
+        <item
+            android:id="@+id/games"
+            android:icon="@drawable/hourglass"
+            android:title="@string/menu_games"/>
         <item
             android:id="@+id/trash"
             android:icon="@drawable/hourglass"

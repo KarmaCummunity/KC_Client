@@ -1,4 +1,4 @@
-package com.example.KC.ui.home;
+package com.example.KC.ui.bottom.home;
 
 import android.os.Bundle;
 import android.os.Handler;
