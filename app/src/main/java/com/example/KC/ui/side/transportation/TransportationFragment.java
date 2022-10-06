@@ -1,4 +1,4 @@
-package com.example.KC.ui.side.hosting;
+package com.example.KC.ui.side.transportation;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -16,19 +16,19 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.KC.R;
+import com.example.KC.ui.side.money.TransportationViewModel;
 
-public class HostingFragment extends Fragment {
+public class TransportationFragment extends Fragment {
 
-    private HostingViewModel moneyViewModel;
+    private TransportationViewModel transportationViewModel;
     private LinearLayout linearLayout;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        moneyViewModel =
-                new ViewModelProvider(this).get(HostingViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_hosting, container, false);
-        final TextView textView = root.findViewById(R.id.link_hosting);
-        moneyViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        transportationViewModel = new ViewModelProvider(this).get(TransportationViewModel.class);
+        View root = inflater.inflate(R.layout.transportation_fragment, container, false);
+        final TextView textView = root.findViewById(R.id.link_transportation);
+        transportationViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 //textView.setText(s);

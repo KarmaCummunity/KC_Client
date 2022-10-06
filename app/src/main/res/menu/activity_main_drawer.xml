@@ -36,6 +36,10 @@
             android:icon="@drawable/knowledge"
             android:title="@string/menu_knowledge" />
         <item
+            android:id="@+id/transportation"
+            android:icon="@drawable/transportation"
+            android:title="@string/menu_traffic" />
+        <item
             android:id="@+id/family"
             android:icon="@drawable/family"
             android:title="@string/menu_family"/>

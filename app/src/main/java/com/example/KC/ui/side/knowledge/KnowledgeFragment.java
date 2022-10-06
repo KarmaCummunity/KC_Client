@@ -1,4 +1,4 @@
-package com.example.KC.ui.side.knowlade;
+package com.example.KC.ui.side.knowledge;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -17,17 +17,17 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.KC.R;
 
-public class KnowladeFragment extends Fragment {
+public class KnowledgeFragment extends Fragment {
 
-    private KnowladeViewModel knowladeViewModel;
+    private KnowledgeViewModel knowledgeViewModel;
     private LinearLayout linearLayout;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        knowladeViewModel = new ViewModelProvider(this).get(KnowladeViewModel.class);
+        knowledgeViewModel = new ViewModelProvider(this).get(KnowledgeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_money, container, false);
         final TextView textView = root.findViewById(R.id.link_money);
-        knowladeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        knowledgeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 //textView.setText(s);

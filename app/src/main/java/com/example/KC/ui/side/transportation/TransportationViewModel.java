@@ -1,16 +1,16 @@
-package com.example.KC.ui.side.knowlade;
+package com.example.KC.ui.side.transportation;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class KnowladeViewModel extends ViewModel {
+public class TransportationViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public KnowladeViewModel() {
+    public TransportationViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("כאן תורמים כסף");
+        mText.setValue("כאן תורמים תחבורה");
     }
 
     public LiveData<String> getText() {

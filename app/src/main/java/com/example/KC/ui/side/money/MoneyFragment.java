@@ -19,12 +19,12 @@ import com.example.KC.R;
 
 public class MoneyFragment extends Fragment {
 
-    private MoneyViewModel moneyViewModel;
+    private com.example.KC.ui.side.money.TransportationViewModel moneyViewModel;
     private LinearLayout linearLayout;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        moneyViewModel = new ViewModelProvider(this).get(MoneyViewModel.class);
+        moneyViewModel = new ViewModelProvider(this).get(com.example.KC.ui.side.money.TransportationViewModel.class);
         View root = inflater.inflate(R.layout.fragment_money, container, false);
         final TextView textView = root.findViewById(R.id.link_money);
         moneyViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {

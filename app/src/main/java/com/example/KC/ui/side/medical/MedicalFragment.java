@@ -1,4 +1,4 @@
-package com.example.KC.ui.side.midecal;
+package com.example.KC.ui.side.medical;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -17,15 +17,15 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.KC.R;
 
-public class MidecalFragment extends Fragment {
+public class MedicalFragment extends Fragment {
 
-    private MidecalViewModel moneyViewModel;
+    private MedicalViewModel moneyViewModel;
     private LinearLayout linearLayout;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         moneyViewModel =
-                new ViewModelProvider(this).get(MidecalViewModel.class);
+                new ViewModelProvider(this).get(MedicalViewModel.class);
         View root = inflater.inflate(R.layout.fragment_money, container, false);
         final TextView textView = root.findViewById(R.id.link_money);
         moneyViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {

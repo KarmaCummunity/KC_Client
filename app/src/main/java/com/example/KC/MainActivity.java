@@ -53,9 +53,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "תשאלו תדעו", Toast.LENGTH_SHORT).show();
             return false;
         });
-        //bottomNavigationView  = findViewById(R.id.bottom_navigation);
 
-        //getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
         drawer = findViewById(R.id.drawer_layout);
 
         NavigationView navigationView = findViewById(R.id.nav_view_side);
