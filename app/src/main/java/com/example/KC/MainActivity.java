@@ -8,7 +8,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.view.menu.MenuView;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private ActionBarDrawerToggle drawerToggle;
     private DrawerLayout drawer;
     private BottomNavigationView bottomNavigationView;
+    private MenuView.ItemView item_view;
 
 
 
@@ -49,18 +52,34 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        toolbar.setOnMenuItemClickListener(item -> {
-            Toast.makeText(MainActivity.this, "תשאלו תדעו", Toast.LENGTH_SHORT).show();
-            return false;
+        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                item_view = findViewById(item.getItemId());
+                switch (item.getItemId()) {
+                    case R.id.action_settings1:
+                        Toast.makeText(MainActivity.this, "" + item.getItemId(), Toast.LENGTH_SHORT).show();
+                        return false;
+                    case R.id.action_settings2:
+                        Toast.makeText(MainActivity.this, "" + item.getItemId(), Toast.LENGTH_SHORT).show();
+                        return false;
+                    case R.id.action_settings3:
+                        Toast.makeText(MainActivity.this, "" + item.getItemId(), Toast.LENGTH_SHORT).show();
+                        return false;
+                    default:
+                        return false;
+                }
+            }
         });
+            drawer = findViewById(R.id.drawer_layout);
 
-        drawer = findViewById(R.id.drawer_layout);
+        toolbar.setOverflowIcon(ContextCompat.getDrawable(getApplicationContext(),R.drawable.ic_baseline_person_pin_24));
 
         NavigationView navigationView = findViewById(R.id.nav_view_side);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home,  R.id.money, R.id.time, R.id.food)
+                R.id.nav_home,  R.id.nav_money, R.id.nav_time, R.id.nav_food)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);

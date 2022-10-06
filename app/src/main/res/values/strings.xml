@@ -6,7 +6,10 @@
     <string name="nav_header_title">הקיבוץ הקיפטליסטי</string>
     <string name="nav_header_subtitle">מה אפשר לתת/לקבל?</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">אודות</string>
+    <string name="action_settings1">תורם ? </string>
+    <string name="action_settings2">מתווך ? </string>
+    <string name="action_settings3">מקבל ? </string>
+    <string name="more_action">עוד עובדים על זה</string>
 
     <string name="menu_main">KC</string>
     <string name="menu_money">כסף</string>

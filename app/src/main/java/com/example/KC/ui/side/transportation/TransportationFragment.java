@@ -16,7 +16,6 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.KC.R;
-import com.example.KC.ui.side.money.TransportationViewModel;
 
 public class TransportationFragment extends Fragment {
 

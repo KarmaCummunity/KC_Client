@@ -1,10 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never"
-        />
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mybackground">
+    <group
+        android:layout_gravity="start"
+        android:gravity="start">
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title=""
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/chat"
+            android:icon="@drawable/ic_baseline_chat_bubble_24"
+            android:title=""
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/notification"
+            android:icon="@drawable/ic_baseline_notifications_active_24"
+            android:title=""
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/action_settings1"
+            android:title="@string/action_settings1"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_settings2"
+            android:title="@string/action_settings2"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_settings3"
+            android:title="@string/action_settings3"
+            app:showAsAction="never" />
+    </group>
 </menu>
