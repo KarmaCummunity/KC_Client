@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/side_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.KC.ui.bottom.home.HomeFragment"
+        android:label="            KC"
+        android:gravity="center"
+        tools:layout="@layout/home_fragment" />
+
+    <fragment
+        android:id="@+id/nav_money"
+        android:name="com.example.KC.ui.side.money.MoneyFragment"
+        android:label="@string/menu_money"
+        tools:layout="@layout/fragment_money" />
+
+    <fragment
+        android:id="@+id/nav_time"
+        android:name="com.example.KC.ui.side.time.TimeFragment"
+        android:label="@string/menu_time"
+        tools:layout="@layout/fragment_time" />
+</navigation>

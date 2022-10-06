@@ -11,6 +11,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -22,6 +23,7 @@ import com.example.KC.ui.bottom.profile.ProfileFragment;
 import com.example.KC.ui.bottom.search.SearchFragment;
 import com.example.KC.ui.side.money.MoneyFragment;
 import com.example.KC.ui.side.time.TimeFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
     private ProfileFragment profileFragment = new ProfileFragment();
     private ActionBarDrawerToggle drawerToggle;
     private DrawerLayout drawer;
+    private BottomNavigationView bottomNavigationView;
+
 
 
 
@@ -45,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //bottomNavigationView  = findViewById(R.id.bottom_navigation);
+
+        //getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
         drawer = findViewById(R.id.drawer_layout);
 
         NavigationView navigationView = findViewById(R.id.nav_view_side);
@@ -64,7 +71,35 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setupDrawerContent(navigationView);
 
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.nav_view_bottom);
 
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            transaction.setReorderingAllowed(true);
+            switch (item.getItemId()) {
+                case R.id.navigation_home:
+                    transaction.replace(R.id.nav_host_fragment, HomeFragment.class, null);
+                    transaction.commit();
+                    break;
+                case R.id.navigation_search:
+                    transaction.replace(R.id.nav_host_fragment, SearchFragment.class, null);
+                    transaction.commit();
+                    break;
+                case R.id.navigation_news:
+                    transaction.replace(R.id.nav_host_fragment, NewsFragment.class, null);
+                    transaction.commit();
+                    break;
+
+                case R.id.navigation_profile:
+                    transaction.replace(R.id.nav_host_fragment, ProfileFragment.class, null);
+                    transaction.commit();
+                    break;
+
+            }
+            return true;
+        });
     }
 
     @Override
@@ -97,6 +132,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void selectDrawerItem(MenuItem menuItem) {
         // Create a new fragment and specify the fragment to show based on nav item clicked
+        FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragment = null;
         Class fragmentClass;
         switch(menuItem.getItemId()) {
@@ -117,7 +153,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Insert the fragment by replacing any existing fragment
-        FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
 
         // Highlight the selected item has been done by NavigationView

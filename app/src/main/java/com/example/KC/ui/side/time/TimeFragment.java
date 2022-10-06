@@ -30,6 +30,8 @@ public class TimeFragment extends Fragment {
                 textView.setText(s);
             }
         });
+
+
         //Uri uri = Uri.parse("https://www.hebrew.we-tribu.com"); // missing 'http://' will cause crashed
         //Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         //startActivity(intent);

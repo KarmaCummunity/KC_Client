@@ -13,10 +13,13 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.KC.R;
+import com.example.KC.ui.bottom.home.HomeViewModel;
 
 public class MoneyFragment extends Fragment {
 
     private MoneyViewModel moneyViewModel;
+    private HomeViewModel homeViewModel;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {

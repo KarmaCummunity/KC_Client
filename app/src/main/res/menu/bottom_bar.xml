@@ -12,7 +12,7 @@
         android:title="" />
 
     <item
-        android:id="@+id/navigation_media"
+        android:id="@+id/navigation_news"
         android:icon="@drawable/ic_menu_slideshow"
         android:title="" />
     <item
