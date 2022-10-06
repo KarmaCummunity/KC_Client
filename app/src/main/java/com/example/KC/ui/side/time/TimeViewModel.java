@@ -10,7 +10,7 @@ public class TimeViewModel extends ViewModel {
 
     public TimeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("כאן תורמים זמן - מתנדבים");
+        mText.setValue("חפשו למי תוכלו לתרום / איזה עמותה מתאימה לכם");
     }
 
     public LiveData<String> getText() {

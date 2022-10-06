@@ -3,6 +3,7 @@ package com.example.KC;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -41,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    //check pull 2
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        toolbar.setOnMenuItemClickListener(item -> {
+            Toast.makeText(MainActivity.this, "תשאלו תדעו", Toast.LENGTH_SHORT).show();
+            return false;
+        });
         //bottomNavigationView  = findViewById(R.id.bottom_navigation);
 
         //getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();

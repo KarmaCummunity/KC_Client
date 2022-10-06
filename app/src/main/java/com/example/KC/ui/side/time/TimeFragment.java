@@ -1,9 +1,12 @@
 package com.example.KC.ui.side.time;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -17,6 +20,7 @@ import com.example.KC.R;
 public class TimeFragment extends Fragment {
 
     private TimeViewModel timeViewModel;
+    private LinearLayout linearLayout;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -31,10 +35,15 @@ public class TimeFragment extends Fragment {
             }
         });
 
-
-        //Uri uri = Uri.parse("https://www.hebrew.we-tribu.com"); // missing 'http://' will cause crashed
-        //Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        //startActivity(intent);
+        linearLayout = root.findViewById(R.id.image);
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://helpi.org.il/"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
         return root;
     }
 }

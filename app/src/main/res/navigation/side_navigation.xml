@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.KC.ui.bottom.home.HomeFragment"
-        android:label="            KC"
         android:gravity="center"
+        android:label="               KC"
         tools:layout="@layout/home_fragment" />
 
     <fragment
@@ -23,4 +23,55 @@
         android:name="com.example.KC.ui.side.time.TimeFragment"
         android:label="@string/menu_time"
         tools:layout="@layout/fragment_time" />
+    <fragment
+        android:id="@+id/nav_food"
+        android:name="com.example.KC.ui.side.food.FoodFragment"
+        android:label="@string/menu_food"
+        tools:layout="@layout/food_fragment" />
+    <fragment
+        android:id="@+id/nav_clothes"
+        android:name="com.example.KC.ui.side.clothes.ClothesFragment"
+        android:title="@string/menu_clothes"
+        tools:layout="@layout/clothes_fragment" />
+    <fragment
+        android:id="@+id/nav_stuff"
+        android:name="com.example.KC.ui.side.stuff.StuffFragment"
+        android:title="@string/menu_stuff"
+        tools:layout="@layout/fragment_stuff" />
+    <fragment
+        android:id="@+id/nav_hosting"
+        android:name="com.example.KC.ui.side.hobbies.HobbiesFragment"
+        android:title="@string/menu_housing" />
+    <fragment
+        android:id="@+id/nav_knowlade"
+        android:name="com.example.KC.ui.side.knowlade.KnowladeFragment"
+        android:title="@string/menu_knowledge" />
+    <fragment
+        android:id="@+id/nav_family"
+        android:name="com.example.KC.ui.side.family.FamilyFragment"
+        android:title="@string/menu_food" />
+    <fragment
+        android:id="@+id/nav_area"
+        android:name="com.example.KC.ui.side.area.AreaFragment"
+        android:title="@string/menu_area" />
+    <fragment
+        android:id="@+id/nav_midecal"
+        android:name="com.example.KC.ui.side.midecal.MidecalFragment"
+        android:title="@string/menu_housing" />
+    <fragment
+        android:id="@+id/nav_hobbies"
+        android:name="com.example.KC.ui.side.hobbies.HobbiesFragment"
+        android:title="@string/menu_housing" />
+    <fragment
+        android:id="@+id/nav_music"
+        android:name="com.example.KC.ui.side.hobbies.HobbiesFragment"
+        android:title="@string/menu_housing" />
+    <fragment
+        android:id="@+id/nav_games"
+        android:name="com.example.KC.ui.side.hobbies.HobbiesFragment"
+        android:title="@string/menu_housing" />
+    <fragment
+        android:id="@+id/nav_trash"
+        android:name="com.example.KC.ui.side.trash.TrashFragment"
+        android:title="@string/menu_housing" />
 </navigation>

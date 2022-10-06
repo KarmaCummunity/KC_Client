@@ -6,7 +6,7 @@
     <string name="nav_header_title">הקיבוץ הקיפטליסטי</string>
     <string name="nav_header_subtitle">מה אפשר לתת/לקבל?</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">אודות</string>
 
     <string name="menu_main">KC</string>
     <string name="menu_money">כסף</string>
