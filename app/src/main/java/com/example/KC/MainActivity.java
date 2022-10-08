@@ -1,5 +1,6 @@
 package com.example.KC;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -8,6 +9,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.view.menu.MenuView;
 import androidx.appcompat.widget.Toolbar;
@@ -44,6 +46,7 @@ import com.example.KC.ui.side.stuff.StuffFragment;
 import com.example.KC.ui.side.time.TimeFragment;
 import com.example.KC.ui.side.transportation.TransportationFragment;
 import com.example.KC.ui.side.trash.TrashFragment;
+import com.example.KC.utils.MyDialog;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
@@ -71,24 +74,23 @@ public class MainActivity extends AppCompatActivity {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 Fragment fragment = null;
                 Class fragmentClass;
+                fragmentClass = getSupportFragmentManager().getClass();
                 switch (item.getItemId()) {
                     case R.id.settings:
                         fragmentClass = SettingsFragment.class;
-                        getSupportActionBar().setTitle(item.getTitle());
+                        getSupportActionBar().setTitle("הגדרות");
                         break;
                     case R.id.chat:
                         fragmentClass = ChatFragment.class;
-                        getSupportActionBar().setTitle(item.getTitle());
+                        getSupportActionBar().setTitle("צא'ט");
                         break;
                     case R.id.notification:
                         fragmentClass = NotificationsFragment.class;
-                        getSupportActionBar().setTitle(item.getTitle());
+                        getSupportActionBar().setTitle("התראות");
                         break;
-
                     case R.id.mode:
-                        fragmentClass = ModeFragment.class;
-                        getSupportActionBar().setTitle(item.getTitle());
-                        break;
+                        dialog();
+                        return true;
                     default:
                         throw new IllegalStateException("Unexpected value: " + item.getItemId());
                 }
@@ -279,5 +281,10 @@ public class MainActivity extends AppCompatActivity {
         setTitle(menuItem.getTitle());
         // Close the navigation drawer
         drawer.closeDrawers();
+    }
+
+    public void dialog() {
+        MyDialog myDialog = new MyDialog();
+        myDialog.show(getSupportFragmentManager(),"sdsd");
     }
 }
