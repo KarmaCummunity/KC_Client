@@ -20,27 +20,27 @@ import com.example.KC.R;
 public class ClothesFragment extends Fragment {
 
     private ClothesViewModel clothesViewModel;
-    private LinearLayout linearLayout;
+    private TextView textView;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         clothesViewModel =
                 new ViewModelProvider(this).get(ClothesViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_money, container, false);
-        final TextView textView = root.findViewById(R.id.link_money);
+        View root = inflater.inflate(R.layout.clothes_fragment, container, false);
+        //textView = root.findViewById(R.id.link_open_heart);
         clothesViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 //textView.setText(s);
             }
         });
-        linearLayout = root.findViewById(R.id.image);
-        linearLayout.setOnClickListener(new View.OnClickListener() {
+        textView = root.findViewById(R.id.link_open_heart);
+        textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Uri uri = Uri.parse("https://www.jgive.com"); // missing 'http://' will cause crashed
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
+                //startActivity(intent);
             }
         });
         return root;

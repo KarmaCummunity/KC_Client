@@ -4,7 +4,8 @@
     android:background="@color/mybackground">
     <group
         android:layout_gravity="start"
-        android:gravity="start">
+        android:gravity="start"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/settings"
             android:icon="@drawable/ic_baseline_settings_24"
@@ -20,17 +21,12 @@
             android:icon="@drawable/ic_baseline_notifications_active_24"
             android:title=""
             app:showAsAction="always" />
+
         <item
-            android:id="@+id/action_settings1"
-            android:title="@string/action_settings1"
-            app:showAsAction="never" />
-        <item
-            android:id="@+id/action_settings2"
-            android:title="@string/action_settings2"
-            app:showAsAction="never" />
-        <item
-            android:id="@+id/action_settings3"
-            android:title="@string/action_settings3"
-            app:showAsAction="never" />
+            app:showAsAction="always"
+            android:title=""
+            android:icon="@drawable/ic_baseline_person_pin_24"
+            android:id="@+id/mode"
+            android:checkable="false" />
     </group>
 </menu>

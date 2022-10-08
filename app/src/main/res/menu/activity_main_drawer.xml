@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view"
-        android:id="@+id/group">
+    android:id="@+id/group"
+    tools:showIn="navigation_view">
 
 
     <group android:checkableBehavior="single">
@@ -13,7 +13,7 @@
             android:title="@string/menu_money" />
         <item
             android:id="@+id/time"
-            android:icon="@drawable/calendar"
+            android:icon="@drawable/deadline"
             android:title="@string/menu_time" />
         <item
             android:id="@+id/food"
@@ -32,6 +32,18 @@
             android:icon="@drawable/temperature"
             android:title="@string/menu_housing" />
         <item
+            android:id="@+id/medicine"
+            android:icon="@drawable/healthcare"
+            android:title="@string/menu_medicine" />
+        <item
+            android:id="@+id/family"
+            android:icon="@drawable/family"
+            android:title="@string/menu_family" />
+        <item
+            android:id="@+id/area"
+            android:icon="@drawable/plot"
+            android:title="@string/menu_area" />
+        <item
             android:id="@+id/knowledge"
             android:icon="@drawable/knowledge"
             android:title="@string/menu_knowledge" />
@@ -40,38 +52,20 @@
             android:icon="@drawable/transportation"
             android:title="@string/menu_traffic" />
         <item
-            android:id="@+id/family"
-            android:icon="@drawable/family"
-            android:title="@string/menu_family"/>
+            android:id="@+id/trash"
+            android:icon="@drawable/trash"
+            android:title="@string/menu_trash" />
         <item
-            android:id="@+id/area"
-            android:icon="@drawable/plot"
-            android:title="@string/menu_area" />
+            android:id="@+id/hobbies"
+            android:icon="@drawable/ball"
+            android:title="@string/menu_hobbies" />
         <item
-            android:id="@+id/medicine"
-            android:icon="@drawable/healthcare"
-            android:title="@string/menu_medicine" />
-        <item android:title="">
-            <menu>
-                <group android:checkableBehavior="single">
-                    <item
-                        android:id="@+id/hobbies"
-                        android:icon="@drawable/ball"
-                        android:title="@string/menu_hobbies" />
-                    <item
-                        android:id="@+id/music"
-                        android:icon="@drawable/temperature"
-                        android:title="@string/menu_music"/>
-                    <item
-                        android:id="@+id/games"
-                        android:icon="@drawable/console"
-                        android:title="@string/menu_games"/>
-                    <item
-                        android:id="@+id/trash"
-                        android:icon="@drawable/trash"
-                        android:title="@string/menu_trash" />
-                </group>
-            </menu>
-        </item>
+            android:id="@+id/music"
+            android:icon="@drawable/music"
+            android:title="@string/menu_music" />
+        <item
+            android:id="@+id/games"
+            android:icon="@drawable/console"
+            android:title="@string/menu_games" />
     </group>
 </menu>

@@ -3,6 +3,7 @@ package com.example.KC.ui.side.money;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,10 +18,14 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.KC.R;
 
+import java.util.Random;
+
 public class MoneyFragment extends Fragment {
 
     private MoneyViewModel moneyViewModel;
     private LinearLayout linearLayout;
+    private int i=0;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -39,7 +44,21 @@ public class MoneyFragment extends Fragment {
             public void onClick(View v) {
                 Uri uri = Uri.parse("https://www.jgive.com"); // missing 'http://' will cause crashed
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
+                Handler hendler = new Handler();
+                try {
+                    i++;
+                    hendler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            if (i == 2) {
+                                startActivity(intent);
+                                i=0;
+                            }
+                            i=0;
+                        }
+                    }, 500);
+                }
+                catch (Exception e) { e.printStackTrace(); }
             }
         });
         return root;
