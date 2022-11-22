@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/side_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.KC.ui.bottom.home.HomeFragment"
+        android:label="KC"
+        tools:layout="@layout/home_fragment" />
+
+    <fragment
+        android:id="@+id/nav_money"
+        android:name="com.example.KC.ui.side.money.MoneyFragment"
+        android:label="@string/menu_money"
+        tools:layout="@layout/fragment_money" />
+
+    <fragment
+        android:id="@+id/nav_time"
+        android:name="com.example.KC.ui.side.time.TimeFragment"
+        android:label="@string/menu_time"
+        tools:layout="@layout/fragment_time" />
+    <fragment
+        android:id="@+id/nav_food"
+        android:name="com.example.KC.ui.side.food.FoodFragment"
+        android:label="@string/menu_food"
+        tools:layout="@layout/food_fragment" />
+    <fragment
+        android:id="@+id/nav_clothes"
+        android:name="com.example.KC.ui.side.clothes.ClothesFragment"
+        android:title="@string/menu_clothes"
+        tools:layout="@layout/clothes_fragment" />
+    <fragment
+        android:id="@+id/nav_stuff"
+        android:name="com.example.KC.ui.side.stuff.StuffFragment"
+        android:title="@string/menu_stuff"
+        tools:layout="@layout/fragment_stuff" />
+    <fragment
+        android:id="@+id/nav_hosting"
+        android:name="com.example.KC.ui.side.hobbies.HobbiesFragment"
+        android:title="@string/menu_housing"
+        tools:layout="@layout/fragment_hosting"/>
+    <fragment
+        android:id="@+id/nav_knowledge"
+        android:name="com.example.KC.ui.side.knowledge.KnowledgeFragment"
+        android:title="@string/menu_knowledge"
+        tools:layout="@layout/knowledge_fragment"/>
+    <fragment
+        android:id="@+id/nav_transportation"
+        android:name="com.example.KC.ui.side.transportation.TransportationFragment"
+        android:title="@string/menu_traffic"
+        tools:layout="@layout/transportation_fragment"/>
+    <fragment
+        android:id="@+id/nav_family"
+        android:name="com.example.KC.ui.side.family.FamilyFragment"
+        android:title="@string/menu_family"
+        tools:layout="@layout/family_fragment"/>
+    <fragment
+        android:id="@+id/nav_area"
+        android:name="com.example.KC.ui.side.area.AreaFragment"
+        android:title="@string/menu_area"
+        tools:layout="@layout/area_fragment"/>
+    <fragment
+        android:id="@+id/nav_medical"
+        android:name="com.example.KC.ui.side.medical.MedicalFragment"
+        android:title="@string/menu_medicine"
+        tools:layout="@layout/medical_fragment"/>
+    <fragment
+        android:id="@+id/nav_hobbies"
+        android:name="com.example.KC.ui.side.hobbies.HobbiesFragment"
+        android:title="@string/menu_hobbies"
+        tools:layout="@layout/hobbies_fragment"/>
+    <fragment
+        android:id="@+id/nav_music"
+        android:name="com.example.KC.ui.side.music.MusicFragment"
+        android:title="@string/menu_housing"
+        tools:layout="@layout/music_fragment"/>
+    <fragment
+        android:id="@+id/nav_games"
+        android:name="com.example.KC.ui.side.games.GamesFragment"
+        android:title="@string/menu_games"
+        tools:layout="@layout/games_fragment"/>
+    <fragment
+        android:id="@+id/nav_trash"
+        android:name="com.example.KC.ui.side.trash.TrashFragment"
+        android:title="@string/menu_trash"
+        tools:layout="@layout/trash_fragment"/>
+</navigation>
