@@ -23,11 +23,10 @@ public class NewsFragment extends Fragment {
         newsViewModel =
                 new ViewModelProvider(this).get(NewsViewModel.class);
         View root = inflater.inflate(R.layout.news_fragment, container, false);
-        final TextView textView = root.findViewById(R.id.news);
         newsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+                //textView.setText(s);
             }
         });
         return root;

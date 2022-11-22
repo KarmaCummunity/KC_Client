@@ -38,7 +38,7 @@ public class HostingFragment extends Fragment {
         linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri = Uri.parse("https://www.jgive.com"); // missing 'http://' will cause crashed
+                Uri uri = Uri.parse("https://www.echpat.org.il/"); // missing 'http://' will cause crashed
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }

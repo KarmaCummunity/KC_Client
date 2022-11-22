@@ -5,6 +5,8 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -15,6 +17,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.KC.R;
+import com.example.KC.ui.option.chat.ChatViewModel;
 
 import java.util.Random;
 
@@ -47,9 +50,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         sentences_View.setOnClickListener(this);
         return root;
     }
-
-
-
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+    }
     public void onClick(View arg0) {
         try {
 
@@ -99,4 +103,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         sentences[10][0] = "הרמה שבה אנשים מכבדים אותך היא פונקציה של כמה אתה מכבד את עצמך";
         sentences[10][1] = "ש. כהן";
     }
+
+
 }

@@ -8,7 +8,6 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.KC.ui.bottom.home.HomeFragment"
-        android:gravity="center"
         android:label="KC"
         tools:layout="@layout/home_fragment" />
 

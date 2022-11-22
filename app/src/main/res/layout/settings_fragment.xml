@@ -1,15 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="?android:windowBackground"
     tools:context=".ui.option.settings.SettingsFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mybackground"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:textDirection="rtl">
 
     <TextView
         android:id="@+id/text"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello1111111111111111111" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הגדרות:"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="30dp"/>
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="אימות חשבון - ?
+צבעים - מוגדרים, עיצוב אישי, ?
+פרופיל - אנונימיות, עוקבים, מווד, כספים, התראות, בהתאם למווד, מנגנון הצבעות, ?"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mybackground"
+            android:text="ערוך"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

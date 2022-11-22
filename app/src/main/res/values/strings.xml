@@ -30,6 +30,45 @@
     <string name="menu_new">חדשות הקהילה</string>
     <string name="menu_search">חיפוש</string>
     <string name="menu_profile">חלקך בקהילה</string>
+
+    <string name="set_money">כאן תוכלו לתרום כסף</string>
+    <string name="set_time">כאן תוכלו לתנדב</string>
+    <string name="set_food">כאן תוכלו לתרום מזון, אוכל מוכן/ארוז וכסף לאכול</string>
+    <string name="set_clothes">כאן תוכלו למסור בגדים</string>
+    <string name="set_stuff">כאן תוכלו למסור כל את כל סוגי חפצים</string>
+    <string name="set_knowledge">כאן תוכלו לתרום ידע, לערוך/לתקן ואפילו ללמד</string>
+    <string name="set_traffic">כאן תוכלו לתרום תחבורה, תוכלו לתת טרמפ או לעזור בשילוח חבילה</string>
+    <string name="set_family">כאן תוכלו לתרום  משפחה, אימוץ/אומנה ואיפלו "משפחה מאמצת"</string>
+    <string name="set_housing">כאן תוכלו לתרום דיור, מגורים/כסף/רהיטים לאוכלוסיות מוחלשות</string>
+    <string name="set_area">כאן תוכלו לתרום שטח, פיזי/דיגיטלי למתרות שונות</string>
+    <string name="set_hobbies">כאן תוכלו לשתף את חברי הקהילה בתחביבים שלכם ולהזמין אותם להצטרף</string>
+    <string name="set_medicine">כאן תוכלו לתרום רפואה, דם/אברים ואפילו פונדקאות </string>
+    <string name="set_trash">כאן תוכלו לתרום פסולת מכל הסוגים </string>
+    <string name="set_music">כאן תוכלו להנות מהפליילסט של הקהילה מוזיקה</string>
+    <string name="set_games">כאן תוכלו משחקים</string>
+    <string name="set_new">חדשות הקהילה</string>
+    <string name="set_search">חיפוש</string>
+    <string name="set_profile">חלקך בקהילה</string>
+
+    <string name="get_money">כסף</string>
+    <string name="get_time">זמן</string>
+    <string name="get_food">מזון</string>
+    <string name="get_clothes">בגדים</string>
+    <string name="get_stuff">חפצים</string>
+    <string name="get_knowledge">ידע</string>
+    <string name="get_traffic">תחבורה</string>
+    <string name="get_family">משפחה</string>
+    <string name="get_housing">דיור</string>
+    <string name="get_area">שטח</string>
+    <string name="get_hobbies">תחביבים</string>
+    <string name="get_medicine">רפואה</string>
+    <string name="get_trash">פסולת</string>
+    <string name="get_music">מוזיקה</string>
+    <string name="get_games">משחקים</string>
+    <string name="get_new">חדשות הקהילה</string>
+    <string name="get_search">חיפוש</string>
+    <string name="get_profile">חלקך בקהילה</string>
+
     <string name="title_activity_money">MainActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>

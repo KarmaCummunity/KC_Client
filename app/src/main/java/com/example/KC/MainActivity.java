@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -50,6 +51,8 @@ import com.example.KC.utils.MyDialog;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private HomeFragment homeFragment = new HomeFragment();
@@ -59,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
     private ActionBarDrawerToggle drawerToggle;
     private DrawerLayout drawer;
     private BottomNavigationView bottomNavigationView;
+
 
 
     @Override
@@ -84,10 +88,14 @@ public class MainActivity extends AppCompatActivity {
                         fragmentClass = ChatFragment.class;
                         getSupportActionBar().setTitle("צא'ט");
                         break;
+                        //Toast.makeText(getApplicationContext(), "עובדים על זה", Toast.LENGTH_SHORT).show();
+                        //return true;
                     case R.id.notification:
                         fragmentClass = NotificationsFragment.class;
                         getSupportActionBar().setTitle("התראות");
                         break;
+//                        Toast.makeText(getApplicationContext(), "עובדים על זה", Toast.LENGTH_SHORT).show();
+  //                      return true;
                     case R.id.mode:
                         dialog();
                         return true;
@@ -113,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
         drawer = findViewById(R.id.drawer_layout);
 
         toolbar.setOverflowIcon(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ic_baseline_person_pin_24));
+
 
         NavigationView navigationView = findViewById(R.id.nav_view_side);
         // Passing each menu ID as a set of Ids because each
@@ -285,6 +294,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void dialog() {
         MyDialog myDialog = new MyDialog();
-        myDialog.show(getSupportFragmentManager(),"sdsd");
+        myDialog.show(getSupportFragmentManager(), "sdsd");
     }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(getIntent());
+    }
+
 }
